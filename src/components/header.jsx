@@ -29,16 +29,16 @@ function Header() {
     };
 
     return (
-        <header className="bg-background text-foreground flex justify-between p-4">
+        <header className="bg-(--background) text-(--foreground) flex justify-between p-4">
             <h1 className="text-3xl font-bold">Logo</h1>
             <button 
                 onClick={toggleTheme}
-                className="px-4 py-2 bg-foreground text-background rounded-md cursor-pointer"
+                className="px-4 py-2 bg-(--foreground) text-(--background) rounded-md cursor-pointer"
             >
                 {isDark ? '☀️ Modo Claro' : '🌙 Modo Escuro'}
             </button>
         </header>
-    )
+    );
 }
 
 export default Header;

@@ -20,7 +20,7 @@
     --color-accent-deep-red: #c8312e;
     --color-accent-amber: #ff8b3d;
     --color-accent-sky: #7cd1ff;
-    --color-accent-lime: #a8e063;
+    --color-accent-green: #4ADE80;
 
     --color-tone-amber: #f5b556;
     --color-tone-cyan: #6fd8d3;
@@ -72,13 +72,13 @@
         --foreground: #e8e6e1;
         --dim: #9a978f;
         --faint: #5a5852;
-        --border: #25252b;
+        --border-gray: #25252b;
         --border-soft: #1b1b20;
     }
 
     html{
         scroll-behavior: smooth;
-        font-family: var(--font-sans);
+        font-family: var(--font-mono);
     }
 
     body {
@@ -89,7 +89,5 @@
 }
 
 @layer components {
-    .shadow-red {
-        box-shadow: 0 0 12px var(--color-accent-crimson);
-    }
+
 }

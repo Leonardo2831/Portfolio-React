@@ -2,74 +2,94 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Space Grotesk", sans-serif;
-  --font-mono: "JetBrains Mono", monospace;
-  --font-serif: "Instrument Serif", serif;
+    --font-sans: "Space Grotesk", sans-serif;
+    --font-mono: "JetBrains Mono", monospace;
+    --font-serif: "Instrument Serif", serif;
 
-  --color-background: var(--background);
-  --color-background-elevated: var(--background-elevated);
-  --color-background-card: var(--background-card);
-  --color-foreground: var(--foreground);
-  --color-dim: var(--dim);
-  --color-faint: var(--faint);
-  --color-border: var(--border);
-  --color-border-soft: var(--border-soft);
+    --color-background: var(--background);
+    --color-background-elevated: var(--background-elevated);
+    --color-background-card: var(--background-card);
+    --color-foreground: var(--foreground);
+    --color-dim: var(--dim);
+    --color-faint: var(--faint);
+    --color-border: var(--border);
+    --color-border-soft: var(--border-soft);
 
-  --color-accent-crimson: #e64545;
-  --color-accent-coral: #ff6b4a;
-  --color-accent-deep-red: #c8312e;
-  --color-accent-amber: #ff8b3d;
-  --color-accent-sky: #7cd1ff;
-  --color-accent-lime: #a8e063;
+    --color-accent-crimson: #e64545;
+    --color-accent-coral: #ff6b4a;
+    --color-accent-deep-red: #c8312e;
+    --color-accent-amber: #ff8b3d;
+    --color-accent-sky: #7cd1ff;
+    --color-accent-lime: #a8e063;
 
-  --color-tone-amber: #f5b556;
-  --color-tone-cyan: #6fd8d3;
+    --color-tone-amber: #f5b556;
+    --color-tone-cyan: #6fd8d3;
 
-  --color-tech-javascript: #f7df1e;
-  --color-tech-typescript: #3178c6;
-  --color-tech-html5: #e34f26;
-  --color-tech-css3: #1572b6;
-  --color-tech-sass: #cc6699;
-  --color-tech-tailwind: #38bdf8;
-  --color-tech-vue: #42b883;
-  --color-tech-react: #61dafb;
-  --color-tech-java: #ed8b00;
-  --color-tech-sqlite: #0f80cc;
-  --color-tech-dayjs: #F46C0B;
-  --color-tech-openweather: #eb6e4b;
-  --color-tech-figma: #a259ff;
+    --color-tech-javascript: #f7df1e;
+    --color-tech-typescript: #3178c6;
+    --color-tech-html5: #e34f26;
+    --color-tech-css3: #1572b6;
+    --color-tech-sass: #cc6699;
+    --color-tech-tailwind: #38bdf8;
+    --color-tech-vue: #42b883;
+    --color-tech-react: #61dafb;
+    --color-tech-java: #ed8b00;
+    --color-tech-sqlite: #0f80cc;
+    --color-tech-dayjs: #F46C0B;
+    --color-tech-openweather: #eb6e4b;
+    --color-tech-figma: #a259ff;
+
+    --animate-pulseCircle: pulseCircle 1.4s ease-in-out infinite;
+}
+
+@keyframes pulseCircle {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.9;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
 }
 
 @layer base {
-  body {
-    background-color: var(--background);
-    color: var(--foreground);
-    transition: background-color 0.3s, color 0.3s;
-  }
+    :root {
+        --background: #f5f3ee;
+        --background-elevated: #ebe8e0;
+        --background-card: #ffffff;
+        --foreground: #1a1916;
+        --foreground-muted: #6b685f;
+        --foreground-faint: #a8a59c;
+        --border: #d8d4c8;
+        --border-soft: #e4e0d4;
+    }
 
-  :root {
-    --background: #f5f3ee;
-    --background-elevated: #ebe8e0;
-    --background-card: #ffffff;
-    --foreground: #1a1916;
-    --foreground-muted: #6b685f;
-    --foreground-faint: #a8a59c;
-    --border: #d8d4c8;
-    --border-soft: #e4e0d4;
-  }
+    .dark {
+        --background: #0c0c0d;
+        --background-elevated: #131316;
+        --background-card: #16161a;
+        --foreground: #e8e6e1;
+        --dim: #9a978f;
+        --faint: #5a5852;
+        --border: #25252b;
+        --border-soft: #1b1b20;
+    }
 
-  .dark {
-    --background: #0c0c0d;
-    --background-elevated: #131316;
-    --background-card: #16161a;
-    --foreground: #e8e6e1;
-    --dim: #9a978f;
-    --faint: #5a5852;
-    --border: #25252b;
-    --border-soft: #1b1b20;
-  }
+    html{
+        scroll-behavior: smooth;
+        font-family: var(--font-sans);
+    }
+
+    body {
+        background-color: var(--background);
+        color: var(--foreground);
+        transition: background-color 0.5s, color 0.5s;
+    }
 }
 
 @layer components {
-  
+    .shadow-red {
+        box-shadow: 0 0 12px var(--color-accent-crimson);
+    }
 }

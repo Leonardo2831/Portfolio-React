@@ -86,6 +86,10 @@
         color: var(--foreground);
         transition: background-color 0.5s, color 0.5s;
     }
+
+    .container {
+        @apply max-w-7xl mx-auto px-6 sm:px-10 py-3 sm:py-4;
+    }
 }
 
 @layer components {

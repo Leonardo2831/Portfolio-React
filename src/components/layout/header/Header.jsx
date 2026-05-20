@@ -5,33 +5,20 @@ import Img from "../../ui/Img";
 import MenuMobile from "./MenuMobile";
 import React from "react";
 
-export default function Header() {
+export default function Header({ isTheme, toggleTheme }) {
     const [isMobileOpen, setIsMobileOpen] = React.useState(false);
 
     const toggleMobileMenu = () => {
         setIsMobileOpen(!isMobileOpen);
     };
 
-    const [isTheme, setIsTheme] = React.useState(() => {
-        const savedTheme = localStorage.getItem('theme');
-        return savedTheme === 'dark';
-    });
-
-    React.useEffect(() => {
-        document.body.classList.toggle('dark', isTheme);
-    }, [isTheme]);
-
-    const toggleTheme = () => {
-        setIsTheme(!isTheme);
-        localStorage.setItem('theme', !isTheme ? 'dark' : 'light');
-    };
 
     const src = isTheme ? '/icons/dark-theme.svg' : '/icons/light-theme.svg';
     const alt = isTheme ? 'Tema escuro' : 'Tema claro';
     const classStyle = 'w-4 h-4';
 
     return (
-        <div className="bg-(--background) text-(--foreground)">
+        <div className="bg-(--background) text-(--foreground) border-b border-(--border-soft)">
             <header className="relative container flex items-center justify-between gap-5">
                 <TitleName />
                 <Nav classMenu={`md:block ${isMobileOpen ? 'block' : 'hidden'}`} />

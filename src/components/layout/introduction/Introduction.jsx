@@ -4,7 +4,7 @@ import TitleApresentation from "./TitleApresentation";
 import Img from "../../ui/Img";
 import React from "react";
 
-export default function Introduction() {
+export default function Introduction({ isTheme }) {
     function updateTime() {
         const date = new Date();
         const formattedHour = date.toLocaleTimeString("pt-BR", {
@@ -27,7 +27,7 @@ export default function Introduction() {
         <div className="bg-(--background)">
             <section className="container pt-24 pb-35 flex items-center justify-center flex-wrap gap-20 text-sm">
                 <article className="flex-1 flex flex-col gap-7">
-                    <div className="flex items-center gap-2.5 text-xs">
+                    <div className="flex items-center flex-wrap gap-2.5 text-xs">
                         <div className="flex items-center gap-2 px-2.5 py-1 rounded-full bg-(--background-elevated) border border-(--border-gray)">
                             <CirclePulse color="green" />
                             <p>disponível para projetos</p>
@@ -46,8 +46,8 @@ export default function Introduction() {
                         detalhe.
                     </p>
                     <div className="flex items-center gap-2.5">
-                        <Button color="red" text="ver projetos" children={<Img src="/icons/arrow-right.svg" alt="Ver Projetos" classStyle="w-3.5 h.3.5" />} />
-                        <Button color="black" text="baixar CV" children={<Img src="/icons/download.svg" alt="Baixar Currículo" classStyle="w-3.5 h.3.5" />} />
+                        <Button color="red" text="ver projetos" children={<Img src={isTheme ? "/icons/arrow-right.svg" : "/icons/arrow-right-light.svg"} alt="Ver Projetos" classStyle="w-3.5 h-3.5" />} />
+                        <Button color="black" text="baixar CV" children={<Img src={isTheme ? "/icons/download.svg" : "/icons/download-light.svg"} alt="Baixar Currículo" classStyle="w-3.5 h-3.5" />} />
                     </div>
                 </article>
                 <figure className="basis-100 max-w-162.5 flex-1 relative bg-(--background-elevated) border border-(--border-gray) rounded-sm overflow-hidden">

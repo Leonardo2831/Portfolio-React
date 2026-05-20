@@ -39,11 +39,11 @@ export default function Introduction({ isTheme }) {
                     </div>
                     <TitleApresentation />
                     <p className="font-sans font-light text-(--dim) text-lg max-w-[50ch]">
-                        {/* Texto reformular ! */}
-                        Estudante de Engenharia de Software na UNIFAE (3º
-                        semestre), no caminho fullstack. Construo interfaces que
-                        unem código limpo, performance e atenção obsessiva ao
-                        detalhe.
+                        Sou estudante de <span className="text-accent-crimson font-medium">Engenharia de Software</span> na UNIFAE (3º semestre), 
+                        no caminho para me tornar um <span className="text-accent-crimson font-medium">desenvolvedor fullstack.</span> Busco 
+                        construir interfaces para a facilitação de atividades cotidianas. 
+                        Além disso, sou detalhista e proativo, busco sempre aprender de tudo 
+                        um pouco e me dedico a trazer pontos positivos e soluções construtivas por onde passo.
                     </p>
                     <div className="flex items-center gap-2.5">
                         <Button color="red" text="ver projetos" children={<Img src={isTheme ? "/icons/arrow-right.svg" : "/icons/arrow-right-light.svg"} alt="Ver Projetos" classStyle="w-3.5 h-3.5" />} />

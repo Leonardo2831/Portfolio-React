@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -81,13 +81,13 @@
 
     html{
         scroll-behavior: smooth;
-        font-family: var(--font-mono);
     }
 
     body {
         background-color: var(--background);
         color: var(--foreground);
         transition: background-color 0.5s, color 0.5s;
+        font-family: var(--font-mono);
     }
 
     .container {

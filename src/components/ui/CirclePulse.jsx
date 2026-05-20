@@ -1,10 +1,15 @@
-export default function CirclePulse({ color = 'crimson' }) {
+export default function CirclePulse({ color }) {
     const shadows = {
-        'crimson': 'shadow-[0_0_10px_var(--color-accent-crimson)]',
-        'green': 'shadow-[0_0_10px_var(--color-accent-green)]',
+        'crimson': 'shadow-crimson',
+        'green': 'shadow-green',
     };
 
-    const classCircle = `w-2 h-2 bg-accent-${color} rounded-full ${shadows[color]} animate-pulseCircle`;
+    const colorItem = {
+        'crimson': 'bg-accent-crimson',
+        'green': 'bg-accent-green',
+    };
+
+    const classCircle = `w-2 h-2 ${colorItem[color]} rounded-full ${shadows[color]} animate-pulseCircle`;
 
     return (
         <span className={classCircle}></span>

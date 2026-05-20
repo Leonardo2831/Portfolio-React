@@ -4,7 +4,7 @@ export default function ButtonConfig(props) {
         : "";
 
     return (
-        <label htmlFor={props.id} className={`w-9 h-9 flex items-center justify-center group cursor-pointer hover:text-(--foreground) hover:border-(--foreground) text-xs uppercase text-(--dim) p-1.5 rounded-md bg-(--background-elevated) border border-(--border-gray) ${classButtonChecked} ${props.visible || ""} transition-all`}>
+        <label htmlFor={props.id} className={`w-9 h-9 flex items-center justify-center group cursor-pointer hover:text-(--foreground) hover:border-(--foreground) text-xs uppercase text-(--dim) p-1.5 rounded-md bg-(--background-faint) border border-(--border-gray) ${classButtonChecked} ${props.visible || ""} transition-all`}>
             {props.children}
             <input 
                 type={props.type} 

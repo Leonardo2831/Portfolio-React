@@ -6,13 +6,15 @@
     --font-mono: "JetBrains Mono", monospace;
     --font-serif: "Instrument Serif", serif;
 
+    --breakpoint-xs: 480px;
+
     --color-background: var(--background);
     --color-background-elevated: var(--background-elevated);
     --color-background-card: var(--background-card);
     --color-foreground: var(--foreground);
     --color-dim: var(--dim);
     --color-faint: var(--faint);
-    --color-border: var(--border);
+    --color-border: var(--border-gray);
     --color-border-soft: var(--border-soft);
 
     --color-accent-crimson: #e64545;
@@ -36,9 +38,9 @@
     --color-tech-react: #61dafb;
     --color-tech-java: #ed8b00;
     --color-tech-sqlite: #0f80cc;
-    --color-tech-dayjs: #F46C0B;
     --color-tech-openweather: #eb6e4b;
     --color-tech-figma: #a259ff;
+    --color-tech-dayjs: #F46C0B;
 
     --animate-pulseCircle: pulseCircle 1.4s ease-in-out infinite;
 }
@@ -99,5 +101,8 @@
     }
     .shadow-green {
         box-shadow: 0 0 10px var(--color-accent-green);
+    }
+    .bg-gradient-border-soft {
+        background-image: linear-gradient(to right, var(--border-soft), transparent);
     }
 }

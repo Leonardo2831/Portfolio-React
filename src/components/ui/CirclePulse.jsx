@@ -9,7 +9,7 @@ export default function CirclePulse({ color }) {
         'green': 'bg-accent-green',
     };
 
-    const classCircle = `w-2 h-2 ${colorItem[color]} rounded-full ${shadows[color]} animate-pulseCircle`;
+    const classCircle = `min-w-2 min-h-2 ${colorItem[color]} rounded-full ${shadows[color]} animate-pulseCircle`;
 
     return (
         <span className={classCircle}></span>

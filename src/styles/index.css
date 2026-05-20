@@ -59,9 +59,9 @@
         --background-elevated: #ebe8e0;
         --background-card: #ffffff;
         --foreground: #1a1916;
-        --foreground-muted: #6b685f;
-        --foreground-faint: #a8a59c;
-        --border: #d8d4c8;
+        --dim: #6b685f;
+        --faint: #a8a59c;
+        --border-gray: #d8d4c8;
         --border-soft: #e4e0d4;
     }
 

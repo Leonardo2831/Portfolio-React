@@ -1,6 +1,6 @@
 export default function Nav({ classMenu }) {
     return (
-        <nav className={`${classMenu} absolute top-full right-10 z-20 p-4 rounded-lg border border-(--border-soft) md:static md:p-0 md:border-none`}>
+        <nav className={`${classMenu} bg-(--background) absolute top-full right-10 z-20 p-4 rounded-lg border border-(--border-soft) md:bg-transparent md:static md:p-0 md:border-none`}>
             <ul className="flex flex-col items-center justify-center gap-4 md:flex-row md:flex-wrap md:gap-1 text-sm lg:gap-0">
                 <li className="*:px-3 *:py-1.5 *:space-x-1 *:lowercase text-(--dim) hover:text-(--foreground) transition-all">
                     <a href="#sobre">
@@ -29,5 +29,5 @@ export default function Nav({ classMenu }) {
                 </li>
             </ul>
         </nav>
-    )
+    );
 }

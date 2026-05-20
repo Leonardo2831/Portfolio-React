@@ -32,7 +32,7 @@ export default function Header() {
 
     return (
         <div className="bg-(--background) text-(--foreground)">
-            <header className="relative px-6 sm:px-10 py-3 sm:py-4 max-w-7xl mx-auto flex items-center justify-between gap-5">
+            <header className="relative container flex items-center justify-between gap-5">
                 <TitleName />
                 <Nav classMenu={`md:block ${isMobileOpen ? 'block' : 'hidden'}`} />
                 <div className="flex items-center justify-center flex-wrap gap-2">

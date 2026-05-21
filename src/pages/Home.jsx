@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../components/layout/header/Header";
 import Introduction from "../components/layout/introduction/Introduction";
 import Section from "../components/ui/Section";
-import Sobre from "../components/layout/Sobre";
+import Sobre from "../components/layout/about/Sobre";
 
 export default function Home(){
     const [isTheme, setIsTheme] = React.useState(() => {

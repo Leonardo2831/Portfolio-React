@@ -25,7 +25,7 @@ export default function Sobre(){
     ];
 
     return (
-        <div className="flex justify-between mt-10">
+        <div className="flex justify-between gap-15 mt-10">
             <div className="flex-1">
                 <ul className="space-y-2.5">
                     {about.map((item, index) => (
@@ -36,7 +36,7 @@ export default function Sobre(){
                     ))}
                 </ul>
             </div>
-            <article className="space-y-6 flex-1 *:text-(--foreground) *:text-2xl *:font-sans *:font-light">
+            <article className="space-y-6 flex-2 *:text-(--foreground) *:text-2xl *:font-sans *:font-light">
                 <p>
                     Comecei programando porque queria entender o que acontece <TagMark text="por trás do botão" />. 
                     Hoje, depois de quase dois anos construindo interfaces, sou apaixonado por 

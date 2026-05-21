@@ -96,12 +96,6 @@
 }
 
 @layer components {
-    .shadow-crimson {
-        box-shadow: 0 0 10px var(--color-accent-crimson);
-    }
-    .shadow-green {
-        box-shadow: 0 0 10px var(--color-accent-green);
-    }
     .bg-gradient-border-soft {
         background-image: linear-gradient(to right, var(--border-soft), transparent);
     }

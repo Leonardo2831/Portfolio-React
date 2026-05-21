@@ -1,5 +1,5 @@
 import Button from "../../ui/Button";
-import CirclePulse from "../../ui/CirclePulse";
+import ItemPulse from "../../ui/ItemPulse";
 import TitleApresentation from "./TitleApresentation";
 import Img from "../../ui/Img";
 import React from "react";
@@ -29,7 +29,7 @@ export default function Introduction({ isTheme }) {
                 <article className="flex-1 flex flex-col gap-7">
                     <div className="flex items-center flex-wrap gap-2.5 text-xs">
                         <div className="flex items-center gap-2 px-2.5 py-1 rounded-full bg-(--background-elevated) border border-(--border-gray)">
-                            <CirclePulse color="green" />
+                            <ItemPulse color="green" />
                             <p>disponível para projetos</p>
                         </div>
                         <span>·</span>
